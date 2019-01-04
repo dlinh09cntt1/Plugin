@@ -1,0 +1,283 @@
+ul.pagination{
+	clear:both;
+	text-align:center;
+}
+ul.pagination li {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+ul.pagination li a {
+    padding: 10px 15px;
+    display: block;
+}
+ul.pagination li.active {
+    padding: 10px 15px;
+}
+div#result_ajaxp {
+    position: relative;
+}
+div#result_ajaxp:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+.ajp-content{
+	margin:20px 0;
+}
+/*CSS load*/
+#circularG {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+.circularG {
+    position: absolute;
+    background-color: #000000;
+    width: 7px;
+    height: 7px;
+    -moz-border-radius: 5px;
+    -moz-animation-name: bounce_circularG;
+    -moz-animation-duration: 0.56s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -webkit-border-radius: 5px;
+    -webkit-animation-name: bounce_circularG;
+    -webkit-animation-duration: 0.56s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -ms-border-radius: 5px;
+    -ms-animation-name: bounce_circularG;
+    -ms-animation-duration: 0.56s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-direction: normal;
+    -o-border-radius: 5px;
+    -o-animation-name: bounce_circularG;
+    -o-animation-duration: 0.56s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: normal;
+    border-radius: 5px;
+    animation-name: bounce_circularG;
+    animation-duration: 0.56s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+#circularG_1 {
+    left: 0;
+    top: 12px;
+    -moz-animation-delay: 0.21s;
+    -webkit-animation-delay: 0.21s;
+    -ms-animation-delay: 0.21s;
+    -o-animation-delay: 0.21s;
+    animation-delay: 0.21s;
+}
+#circularG_2 {
+    left: 3px;
+    top: 3px;
+    -moz-animation-delay: 0.28s;
+    -webkit-animation-delay: 0.28s;
+    -ms-animation-delay: 0.28s;
+    -o-animation-delay: 0.28s;
+    animation-delay: 0.28s;
+}
+#circularG_3 {
+    top: 0;
+    left: 12px;
+    -moz-animation-delay: 0.35s;
+    -webkit-animation-delay: 0.35s;
+    -ms-animation-delay: 0.35s;
+    -o-animation-delay: 0.35s;
+    animation-delay: 0.35s;
+}
+#circularG_4 {
+    right: 3px;
+    top: 3px;
+    -moz-animation-delay: 0.42s;
+    -webkit-animation-delay: 0.42s;
+    -ms-animation-delay: 0.42s;
+    -o-animation-delay: 0.42s;
+    animation-delay: 0.42s;
+}
+#circularG_5 {
+    right: 0;
+    top: 12px;
+    -moz-animation-delay: 0.49s;
+    -webkit-animation-delay: 0.49s;
+    -ms-animation-delay: 0.49s;
+    -o-animation-delay: 0.49s;
+    animation-delay: 0.49s;
+}
+#circularG_6 {
+    right: 3px;
+    bottom: 3px;
+    -moz-animation-delay: 0.56s;
+    -webkit-animation-delay: 0.56s;
+    -ms-animation-delay: 0.56s;
+    -o-animation-delay: 0.56s;
+    animation-delay: 0.56s;
+}
+#circularG_7 {
+    left: 12px;
+    bottom: 0;
+    -moz-animation-delay: 0.63s;
+    -webkit-animation-delay: 0.63s;
+    -ms-animation-delay: 0.63s;
+    -o-animation-delay: 0.63s;
+    animation-delay: 0.63s;
+}
+#circularG_8 {
+    left: 3px;
+    bottom: 3px;
+    -moz-animation-delay: 0.7s;
+    -webkit-animation-delay: 0.7s;
+    -ms-animation-delay: 0.7s;
+    -o-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+@-moz-keyframes bounce_circularG {
+    0% {
+        -moz-transform: scale(1)
+    }
+    100% {
+        -moz-transform: scale(.3)
+    }
+}
+@-webkit-keyframes bounce_circularG {
+    0% {
+        -webkit-transform: scale(1)
+    }
+    100% {
+        -webkit-transform: scale(.3)
+    }
+}
+@-ms-keyframes bounce_circularG {
+    0% {
+        -ms-transform: scale(1)
+    }
+    100% {
+        -ms-transform: scale(.3)
+    }
+}
+@-o-keyframes bounce_circularG {
+    0% {
+        -o-transform: scale(1)
+    }
+    100% {
+        -o-transform: scale(.3)
+    }
+}
+@keyframes bounce_circularG {
+    0% {
+        transform: scale(1)
+    }
+    100% {
+        transform: scale(.3)
+    }
+}
+.loading_ajaxp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.05);
+    display: none;
+}
+.ajaxp_list_post{
+  opacity:1;
+  /*just in case ie*/
+  opacity:1 \9;
+  -webkit-animation:zoomIn .5s ease-in-out;
+  -moz-animation:zoomIn .5s ease-in-out;
+  animation:zoomIn .5s ease-in-out;
+  -webkit-animation-fill-mode:backwards;
+  -moz-animation-fill-mode:backwards;
+  animation-fill-mode:backwards;
+  -webkit-animation-duration:.5s;
+  -moz-animation-duration:.5s;
+  animation-duration:.5s;
+}
+.ajaxp_list_post.fadeok0{
+  -webkit-animation-delay:0.1s;
+  -moz-animation-delay:0.1s;
+  animation-delay:0.1s;
+}
+.ajaxp_list_post.fadeok1{
+  -webkit-animation-delay:.2s;
+  -moz-animation-delay:.2s;
+  animation-delay:.2s;
+}
+.ajaxp_list_post.fadeok2{
+  -webkit-animation-delay:.4s;
+  -moz-animation-delay:.4s;
+  animation-delay:.4s;
+}
+.ajaxp_list_post.fadeok3{
+  -webkit-animation-delay:.6s;
+  -moz-animation-delay:.6s;
+  animation-delay:.6s;
+}
+.ajaxp_list_post.fadeok4{
+  -webkit-animation-delay:.8s;
+  -moz-animation-delay:.8s;
+  animation-delay:.8s;
+}
+.ajaxp_list_post.fadeok5{
+  -webkit-animation-delay:1s;
+  -moz-animation-delay:1s;
+  animation-delay:1s;
+}
+.ajaxp_list_post.fadeok6{
+  -webkit-animation-delay:1.2s;
+  -moz-animation-delay:1.2s;
+  animation-delay:1.2s;
+}
+.ajaxp_list_post.fadeok7{
+  -webkit-animation-delay:1.4s;
+  -moz-animation-delay:1.4s;
+  animation-delay:1.4s;
+}
+.ajaxp_list_post.fadeok8{
+  -webkit-animation-delay:1.6s;
+  -moz-animation-delay:1.6s;
+  animation-delay:1.6s;
+}
+.ajax_pagination .ajp_gird{
+	width:33.3%;
+	float:left;
+	padding:10px;
+}
+.psa-next-prev{
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.psa-next-prev li a{
+	font-size: 26px;
+    line-height: 34px;
+    font-weight: 600;
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.psa-next-prev li a.psa-next{
+	right:-7%;
+}
+.psa-next-prev li a.psa-prev{
+	left:-7%;
+}
+.load_possts{
+	text-align:center;
+	margin:20px 0;
+	clear: both;
+}
+.load_possts a{
+	font-size:30px;
+	font-weight:600;
+}
